@@ -5,9 +5,13 @@ p2hp = 100
 
 def p1turn():
     print("Attack or Heal")
-    choice = input("")
-    if choice == "Attack":
+    choice = input("").lower()
+    if choice == "attack":
         p1attack()
+    elif choice == "heal":
+        p1heal()
+    else:
+        p1turn()
 #------------------------
 def p1attack():
     global p2hp
@@ -16,7 +20,7 @@ def p1attack():
     print("You have damaged "+str(dmg)+"HP")
 # ------------------------
 def p1heal():
-    global p1hp
+    global p1hp 
     if p1hp > 99:
         print("Your HP is full choose other sections")
         p1turn()
@@ -25,3 +29,4 @@ def p1heal():
 #------------------------
 
 p1turn()
+print(p2hp)
