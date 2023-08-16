@@ -2,7 +2,7 @@ import time
 import random
 p1hp = 100
 p2hp = 100
-name = input("Choose a nickname")
+name = input("Choose a nickname : ")
 while p1hp >= 0 or p2hp >= 0:
     def p1turn():
         print("Attack or Heal")
@@ -27,6 +27,7 @@ while p1hp >= 0 or p2hp >= 0:
             p2move()
         else:
             print("You JUST WON !")
+            exit()
     #------------------------
     def p1heal():
         global p1hp
@@ -44,7 +45,7 @@ while p1hp >= 0 or p2hp >= 0:
         a = random.randint(0, 10)
         global p1hp
         global p2hp
-        if a > 7:
+        if a > 7 and p2hp < 88:
             p2hp +=18
             print("Computer Healed 18HP")
             print(f"{name} HP = {p1hp}")
@@ -60,4 +61,5 @@ while p1hp >= 0 or p2hp >= 0:
                 p1turn()
             else:
                 print("Computer Wins")
+                exit()
     p1turn()
