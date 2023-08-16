@@ -35,6 +35,7 @@ while p1hp >= 0 or p2hp >= 0:
             print("Your HP cant be greater than 100")
             print(f"{name} HP = {p1hp}")
             print(f"Enemy HP = {p2hp}")
+            time.sleep(1)
             p1turn()
         else:
             p1hp += 18
@@ -50,6 +51,7 @@ while p1hp >= 0 or p2hp >= 0:
             print("Computer Healed 18HP")
             print(f"{name} HP = {p1hp}")
             print(f"Enemy HP = {p2hp}")
+            time.sleep(1)
             p1turn()
         else:
             b = random.randint(16,25)
@@ -58,6 +60,7 @@ while p1hp >= 0 or p2hp >= 0:
             print(f"{name} HP = {p1hp}")
             print(f"Enemy HP = {p2hp}")
             if p1hp == abs(p1hp):
+                time.sleep(1)
                 p1turn()
             else:
                 print("Computer Wins")
