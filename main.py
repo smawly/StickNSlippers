@@ -31,7 +31,7 @@ while p1hp >= 0 or p2hp >= 0:
     #------------------------
     def p1heal():
         global p1hp
-        if p1hp > 88:
+        if p1hp > 82:
             print("Your HP cant be greater than 100")
             print(f"{name} HP = {p1hp}")
             print(f"Enemy HP = {p2hp}")
@@ -46,7 +46,7 @@ while p1hp >= 0 or p2hp >= 0:
         a = random.randint(0, 10)
         global p1hp
         global p2hp
-        if a > 7 and p2hp < 88:
+        if a > 7 and p2hp < 82:
             p2hp +=18
             print("Computer Healed 18HP")
             print(f"{name} HP = {p1hp}")
