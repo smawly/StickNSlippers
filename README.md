@@ -1,3 +1,2 @@
 # StickNSlippers
-
-SASASASASASASA
+A Game
