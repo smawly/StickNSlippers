@@ -1,2 +1,2 @@
 # Stick N Slippers
-A Game
+Turn Based - RPG Game
